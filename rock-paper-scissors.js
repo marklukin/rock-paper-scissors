@@ -7,6 +7,8 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 updateScoreElement();
 
 function playGame(playerMove) {
+    const computerMove = pickComputerMove();
+    let result = '';
     
     if (playerMove === 'scissors') {
         if (computerMove === 'rock') {
@@ -75,6 +77,3 @@ function pickComputerMove() {
 
     return computerMove;
 }
- 
-let result = '';
-const computerMove = pickComputerMove();
