@@ -2,6 +2,7 @@ body {
     background-color: rgb(25, 25, 25);
     color: white;
     font-family: Arial;
+    height: 600px;
 }
 
 .title {
@@ -34,7 +35,8 @@ body {
 }
 
 .reset-button,
-.auto-play-button {
+.auto-play-button,
+.confirmation-button {
     background-color: white;
     border: none;
     padding: 8px 17px;
