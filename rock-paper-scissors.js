@@ -52,11 +52,15 @@ document.querySelector('.auto-play-button').addEventListener('click', () => {
 
 document.body.addEventListener('keydown', (event) => {
     if (event.key === 'Backspace') {
-        resetScore();
+        confirmation();
     }
 })
 
 document.querySelector('.reset-button').addEventListener('click', () => {
+    confirmation();
+})
+
+function confirmation() {
     let result = document.querySelector('.confirmation');
     const html = `
     <p style="display: inline-block">Are you sure you want to reset score?</p>
@@ -71,7 +75,7 @@ document.querySelector('.reset-button').addEventListener('click', () => {
     document.querySelector('.no-button').addEventListener('click', () => {
         result.innerHTML = '';
     })
-})
+}
 
 document.body.addEventListener('keydown', (event) => {
     if (event.key === 'a') {
