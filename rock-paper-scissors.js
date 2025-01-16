@@ -67,7 +67,7 @@ function confirmation() {
     <button class="confirmation-button yes-button">Yes</button>
     <button class="confirmation-button no-button">No</button>
     `;
-    result.innerHTML += html;
+    result.innerHTML = html;
     document.querySelector('.yes-button').addEventListener('click', () => {
         result.innerHTML = '';
         resetScore();
